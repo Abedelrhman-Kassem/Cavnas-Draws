@@ -1,6 +1,6 @@
-window.addEventListener("onload", () => {
+window.onload = () => {
   document.querySelectorAll("video").forEach((ele) => ele.play());
-});
+};
 
 function animate() {
   // Run The Animation Frame
