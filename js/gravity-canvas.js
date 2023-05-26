@@ -55,14 +55,14 @@ class MouseMoveCircle {
 }
 
 let drawsArray = [];
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 400; i++) {
   // put the data of the circles randomly
-  let raduis = 30;
-  let x = Math.random() * canvas.width;
-  let y = Math.random() * 200;
+  let raduis = Math.random() * 30 + 10;
+  let x = Math.random() * (canvas.width - raduis * 2) + raduis;
+  let y = Math.random() * (canvas.height - raduis * 2) + raduis;
   let dx = Math.random() * 2 - 0.5;
   let dy = 1;
-  let friction = Math.random() * 0.17 + 0.8;
+  let friction = Math.random() * 0.29 + 0.7;
 
   // push in Array
   drawsArray.push(
