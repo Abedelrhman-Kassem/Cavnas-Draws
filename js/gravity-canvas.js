@@ -78,8 +78,8 @@ for (let i = 0; i < 400; i++) {
   );
 }
 
-function animateFrame() {
-  requestAnimationFrame(animateFrame);
+function animate() {
+  requestAnimationFrame(animate);
   repaint(canvas, ctx, drawsArray);
 }
-animateFrame();
+animate();
